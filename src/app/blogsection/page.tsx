@@ -10,16 +10,24 @@ const BlogPage = () => {
       {/* Left Section */}
       <div className="w-1/2 bg-gray-900 p-12 flex flex-col justify-center relative">
         <div className="absolute top-8 left-8">
-          <h3 className="text-red-400 text-xl font-medium tracking-wide">Portfolio</h3>
-        </div>
+        <li className="hover:text-red-400 text-gray-400 cursor-pointer transition-colors duration-300">
+              <Link href="/">Home</Link>
+            </li>        </div>
 
         <nav className="absolute top-8 right-8">
           <ul className="flex space-x-8 text-gray-400">
-            <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">About</li>
-            <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">Services</li>
-            <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">Contact</li>
+          <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">
+              <Link href="/blogsection">About</Link>
+            </li>
+            <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">
+              <Link href="/skills">Skills</Link>
+            </li>
+            <li className="hover:text-red-400 cursor-pointer transition-colors duration-300">
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </nav>
+
 
         <div className="relative w-64 h-64 mx-auto mb-8">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-400 to-gray-700 p-1 animate-pulse">

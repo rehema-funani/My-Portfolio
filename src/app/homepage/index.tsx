@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
@@ -28,7 +27,7 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex justify-center space-x-4">
           <a
-            href="#contact"
+            href="contact"
             className="px-6 py-3 bg-red-400 text-white rounded-full shadow-md 
                      hover:bg-red-500 transition duration-300 ease-in-out
                      text-lg font-bold"
@@ -48,16 +47,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Floating Image - Commented out but updated with new styling */}
-      {/* <div className="absolute bottom-10 right-10 md:bottom-20 md:right-20 w-32 h-32 md:w-40 md:h-40">
-        <Image
-          src="/images/rehema.png"
-          alt="Rehema Funani"
-          width={160}
-          height={160}
-          className="rounded-full object-cover transform rotate-6 border-4 border-red-400"
-        />
-      </div> */}
     </section>
   );
 }

@@ -1,10 +1,20 @@
+
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link"; // Import Link for navigation
 import { Code2, Server, Palette, Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/blogsection" },
+    { name: "Skills", href: "/skills" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+  ];
 
   return (
     <nav className="bg-gray-900 border-b border-gray-800">
@@ -16,14 +26,14 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
                 className="text-gray-300 hover:text-red-400 transition-colors"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
 
@@ -43,14 +53,14 @@ const Navigation = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-900">
-            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
                 className="block px-3 py-2 text-gray-300 hover:text-red-400"
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
         </div>
@@ -113,24 +123,22 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills Progress Bars */}
-       {/* Skills Progress Bars */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-  {skills.map((skill, index) => (
-    <div key={index}>
-    <div className="flex justify-between items-center mb-2">
-      <span className="text-gray-300 font-medium">{skill.name}</span>
-      <span className="text-gray-400">{skill.percentage} %</span>
-    </div>
-    <div className="h-3 bg-gray-700 rounded-full overflow-hidden">
-      <div 
-        className="h-full bg-red-400 rounded-full transition-all duration-500 ease-out"
-        style={{ width: `${skill.percentage}%` }}
-      />
-    </div>
-  </div>
-))}
-</div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          {skills.map((skill, index) => (
+            <div key={index}>
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-gray-300 font-medium">{skill.name}</span>
+                <span className="text-gray-400">{skill.percentage} %</span>
+              </div>
+              <div className="h-3 bg-gray-700 rounded-full overflow-hidden">
+                <div 
+                  className="h-full bg-red-400 rounded-full transition-all duration-500 ease-out"
+                  style={{ width: `${skill.percentage}%` }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

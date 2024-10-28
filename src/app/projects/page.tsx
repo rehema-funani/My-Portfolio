@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Code2, ChevronLeft, ChevronRight, Github } from 'lucide-react';
+import { Code2, ChevronLeft, ChevronRight, Github } from 'lucide-react';
 
 const ProjectsPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -15,9 +15,9 @@ const ProjectsPage = () => {
       description: "Secure authentication system with Sign Up, Sign In, and SSO integration using OAuth2.0 and JWT tokens for enhanced security",
       category: "development",
       image: "/images/auth-system.png",
-      link: "/projects/auth",
+      link: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SAzWk1UbHlYNXl0WHJ0XzBuUzVtX0I4dFdzd2pVT1hYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGFYN1YxTERhWXJydkpBODhkY2pNMHpUOFJNd3hwNlUzo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI",
       tech: ["NextAuth.js", "JWT", "OAuth"],
-      github: "https://github.com/yourusername/auth-project"
+      github: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SAzWk1UbHlYNXl0WHJ0XzBuUzVtX0I4dFdzd2pVT1hYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGFYN1YxTERhWXJydkpBODhkY2pNMHpUOFJNd3hwNlUzo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI"
     },
     {
       title: "Design Concept",
@@ -154,43 +154,44 @@ const ProjectsPage = () => {
                   <div key={index} className="w-full flex-shrink-0">
                     <div className="p-4">
                       <div className="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 hover:border-red-400/50 transition-all duration-300">
-                        <div className="relative h-80 w-full">
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            layout="fill"
-                            objectFit="cover"
-                            className="transition-transform duration-500"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
-                          <div className="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 className="text-2xl font-bold text-white mb-2">
-                              {project.title}
-                            </h3>
-                            <p className="text-gray-300 mb-4">
-                              {project.description}
-                            </p>
-                            <div className="flex flex-wrap gap-2 mb-4">
-                              {project.tech?.map((tech, i) => (
-                                <span key={i} className="text-xs px-3 py-1 bg-gray-700 text-gray-300 rounded-full">
-                                  {tech}
-                                </span>
-                              ))}
-                            </div>
-                            <div className="flex items-center justify-between">
-                              <Link href={project.link}>
-                                <button className="px-6 py-2 bg-red-400 text-white rounded-full hover:bg-red-500 transition-colors duration-300">
-                                  View Project
-                                </button>
-                              </Link>
-                              {project.github && (
-                                <Link href={project.github}>
-                                  <Github className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
-                                </Link>
-                              )}
-                            </div>
-                          </div>
-                        </div>
+                      <div className="relative h-80 w-full">
+  <Image
+    src={project.image}
+    alt={project.title}
+    layout="fill"
+    objectFit="cover"
+    className="transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
+  <div className="absolute bottom-0 left-0 right-0 p-6">
+    <h3 className="text-4xl font-extrabold text-red-400 mb-2 drop-shadow-md">
+      {project.title}
+    </h3>
+    <p className="text-lg text-white mb-4 drop-shadow-md">
+      {project.description}
+    </p>
+    <div className="flex flex-wrap gap-2 mb-4">
+      {project.tech?.map((tech, i) => (
+        <span key={i} className="text-sm px-3 py-1 bg-gray-700 text-gray-300 rounded-full">
+          {tech}
+        </span>
+      ))}
+    </div>
+    <div className="flex items-center justify-between">
+      <Link href={project.link}>
+        <button className="px-6 py-3 bg-red-400 text-white rounded-full hover:bg-red-500 transition-colors duration-300 font-bold">
+          View Project
+        </button>
+      </Link>
+      {project.github && (
+        <Link href={project.github}>
+          <Github className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
+        </Link>
+      )}
+    </div>
+  </div>
+</div>
+
                       </div>
                     </div>
                   </div>
