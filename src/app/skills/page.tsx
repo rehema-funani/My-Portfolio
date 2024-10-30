@@ -97,7 +97,7 @@ const SkillsSection = () => {
     { name: "Django REST Framework", percentage: 85, category: "Backend" },
     { name: "React", percentage: 80, category: "Frontend" },
     { name: "Next.js", percentage: 75, category: "Frontend" },
-    { name: "DevOps", percentage: 70, category: "Development" },
+    { name: "DevOps", percentage: 30, category: "Development" },
     { name: "HTML & CSS", percentage: 90, category: "Frontend" },
     { name: "Kotlin", percentage: 65, category: "Development" },
   ];
