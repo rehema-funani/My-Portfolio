@@ -44,13 +44,13 @@ const BlogPage = () => {
 
         {/* Added Social Links */}
         <div className="flex justify-center space-x-6 mt-8">
-          <a href="#" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
+          <a href="https://github.com/rehema-funani" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
             <Github className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
+          <a href="https://www.linkedin.com/in/rehema-funani-1782842b3" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
+          <a href="https://x.com/RehemaFunani" className="text-gray-400 hover:text-red-400 transition-colors duration-300">
             <Twitter className="w-6 h-6" />
           </a>
         </div>
@@ -69,13 +69,11 @@ const BlogPage = () => {
           </h1>
 
           <h2 className="text-xl text-gray-300 mb-8 font-medium">
-            Web & Visual Designer
+            Full Stack Developer
           </h2>
 
           <p className="text-gray-400 mb-12 leading-relaxed">
-            I specialize in creating engaging digital experiences through thoughtful design
-            and development. My approach begins with design exploration, followed by
-            implementing robust frontend and backend solutions that bring these designs to life.
+          I am a passionate developer with a strong enthusiasm for designing and building efficient, scalable systems. My focus lies in creating robust APIs and seamlessly integrating them into applications, ensuring smooth data flow and exceptional user experiences.In addition to my backend expertise, I have a solid understanding of frontend development.I actively consume my APIs within frontend applications, using technologies such as React and Next.js to create dynamic, responsive user interfaces.
           </p>
 
           <div className="flex space-x-6">

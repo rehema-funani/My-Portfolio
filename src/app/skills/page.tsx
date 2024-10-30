@@ -79,13 +79,13 @@ const SkillsSection = () => {
     },
     {
       icon: <Code2 className="h-8 w-8" />,
-      title: "Development",
+      title: "Frontend",
       description: "Creating responsive and dynamic applications",
       className: "text-red-400",
     },
     {
       icon: <Palette className="h-8 w-8" />,
-      title: "Frontend",
+      title: "UI/UX Design",
       description: "Crafting beautiful user interfaces",
       className: "text-red-400",
     },
@@ -94,12 +94,15 @@ const SkillsSection = () => {
   const skills = [
     { name: "Python", percentage: 90, category: "Backend" },
     { name: "Django", percentage: 85, category: "Backend" },
-    { name: "Django REST Framework", percentage: 85, category: "Backend" },
+    { name: "Django REST Framework", percentage: 90, category: "Backend" },
     { name: "React", percentage: 80, category: "Frontend" },
     { name: "Next.js", percentage: 75, category: "Frontend" },
-    { name: "DevOps", percentage: 30, category: "Development" },
+    { name: "DevOps", percentage: 48, category: "Development" },
     { name: "HTML & CSS", percentage: 90, category: "Frontend" },
     { name: "Kotlin", percentage: 65, category: "Development" },
+    { name: "Javascript", percentage: 85, category: "Development" },
+
+
   ];
 
   return (

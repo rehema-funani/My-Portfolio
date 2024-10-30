@@ -26,7 +26,7 @@ const Contacts = () => {
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg">
             <h2 className="text-2xl font-bold text-red-400 mb-4">Email</h2>
-            <p className="text-gray-600">rehemafunani@gmail.com</p>
+            <p className="text-gray-600">rehemafunan@gmail.com</p>
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg">
             <h2 className="text-2xl font-bold text-red-400 mb-4">Social</h2>

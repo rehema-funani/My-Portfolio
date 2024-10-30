@@ -15,7 +15,16 @@ const ProjectsPage = () => {
       description: "Secure authentication system with Sign Up, Sign In, and SSO integration using OAuth2.0 and JWT tokens for enhanced security",
       category: "development",
       image: "/images/auth-system.png",
-      link: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SAzWk1UbHlYNXl0WHJ0XzBuUzVtX0I4dFdzd2pVT1hYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGFYN1YxTERhWXJydkpBODhkY2pNMHpUOFJNd3hwNlUzo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI",
+      link: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SBrR0tMWmpwZHR2UWxITzlWWUpVV2V3WmJlLWdScmtmX6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIE9CUmFtbTlqMnRjLThXZ1YySzh0akVPOVFGUjV1OVlJo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI",
+      tech: ["NextAuth.js", "JWT", "OAuth"],
+      github: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SAzWk1UbHlYNXl0WHJ0XzBuUzVtX0I4dFdzd2pVT1hYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGFYN1YxTERhWXJydkpBODhkY2pNMHpUOFJNd3hwNlUzo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI"
+    },
+    {
+      title: "Payment System",
+      description: "It facilitates secure and seamless mobile money transactions directly from an app, enabling users to make payments, receive funds, and manage transactions via M-Pesa",
+      category: "development",
+      image: "/images/payment.png",
+      link: "https://inyange-frontend-1z9d.vercel.app/pwa/pages",
       tech: ["NextAuth.js", "JWT", "OAuth"],
       github: "https://dev-e4mo65e3r1wnll2c.us.auth0.com/u/login?state=hKFo2SAzWk1UbHlYNXl0WHJ0XzBuUzVtX0I4dFdzd2pVT1hYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGFYN1YxTERhWXJydkpBODhkY2pNMHpUOFJNd3hwNlUzo2NpZNkgdGxVVXZ4bHBoelRxTll1MDhFbFdYZldzYkN1ZHd6VVI"
     },
@@ -32,7 +41,7 @@ const ProjectsPage = () => {
       description: "My Next.js portfolio with custom REST APIs and modern design principles",
       category: "development",
       image: "/images/portfolio.png",
-      link: "/projects/portfolio",
+      link: "https://my-portfolio-as59.vercel.app/",
       tech: ["Next.js", "REST API"],
     },
     {
@@ -41,7 +50,7 @@ const ProjectsPage = () => {
       category: "development",
       image: "/images/ecommerce.png",
       link: "https://inyange-frontend-z5s3.vercel.app/",
-      tech: ["React", "Node.js", "MongoDB"],
+      tech: ["NextJS", "Django"],
     },
     {
       title: "Designs",
@@ -167,7 +176,7 @@ const ProjectsPage = () => {
     <h3 className="text-4xl font-extrabold text-red-400 mb-2 drop-shadow-md">
       {project.title}
     </h3>
-    <p className="text-lg text-white mb-4 drop-shadow-md">
+    <p className="text-lg text-black-bold mb-4 drop-shadow-md">
       {project.description}
     </p>
     <div className="flex flex-wrap gap-2 mb-4">
